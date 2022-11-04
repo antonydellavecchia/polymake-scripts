@@ -20,7 +20,7 @@ sub run_markov {
   my $lattice = new Matrix<Integer>(@rows);
   my $initial_time = time();
 
-  markov_basis($lattice);
+  print markov_basis($lattice);
 
   print  "polymake took : ", time() - $initial_time, " \n";
 }
